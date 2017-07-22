@@ -22,6 +22,7 @@
     "expect": "^1.20.2",
     "node-libs-browser": "^2.0.0",
     "node-sass": "^4.5.3",
+    "prettier": "^1.5.3",
     "react": "^15.6.1",
     "react-addons-test-utils": "^15.6.0",
     "react-dom": "^15.6.1",
@@ -38,7 +39,7 @@
     "webpack-dev-server": "^2.5.1",
     "webpack-hot-middleware": "^2.18.2"
   },
-    "devDependencies": {
+  "devDependencies": {
     "babel-plugin-react-transform": "^2.0.2",
     "babel-preset-stage-0": "^6.5.0",
     "react-transform-hmr": "^1.0.4"
