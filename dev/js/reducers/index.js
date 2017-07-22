@@ -1,11 +1,15 @@
-import {combineReducers} from 'redux'
-import todos from './todos'
-import visibilityFilter from './visibilityFilter'
+import {combineReducers} from 'redux';
+import UserReducer from './reducer-users';
+import ActiveUserReducer from './reducer-active-user';
 
-// We need to combine all our reducers into one object before we build our app
+/*
+ * We combine all reducers into a single object before updated data is dispatched (sent) to store
+ * Your entire applications state (store) is just whatever gets returned from all your reducers
+ * */
+
 const allReducers = combineReducers({
-    todos,
-    visibilityFilter
+    users: UserReducer,
+    activeUser: ActiveUserReducer
 });
 
 export default allReducers

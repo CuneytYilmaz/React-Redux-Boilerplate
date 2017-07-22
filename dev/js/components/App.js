@@ -1,20 +1,16 @@
-import React from 'react'
-import AddTodo from '../containers/AddTodo'
-import VisibleTodoList from '../containers/VisibleTodoList'
-import Footer from './Footer'
+import React from 'react';
+import UserList from '../containers/user-list';
+import UserDetails from '../containers/user-detail';
 require('../../scss/style.scss');
-
-/*
- * Containers are just components that are set up to work with Redux
- * */
 
 const App = () => (
     <div>
-        <h1>Main App</h1>
-        <AddTodo />
-        <VisibleTodoList />
-        <Footer />
+        <h2>User List</h2>
+        <UserList />
+        <hr />
+        <h2>User Details</h2>
+        <UserDetails />
     </div>
 );
 
-export default App
+export default App;
